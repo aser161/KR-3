@@ -58,6 +58,7 @@ public class SocksServiceImpl implements SocksService {
         }
         return false;
     }
+
     @PostConstruct
     private void init(){
         readFromFile();
@@ -71,6 +72,7 @@ public class SocksServiceImpl implements SocksService {
             throw new RuntimeException(e);
         }
     }
+
     private void readFromFile(){
         try {
             String json = fileService.readFromFile();

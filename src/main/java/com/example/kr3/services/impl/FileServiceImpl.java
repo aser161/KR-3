@@ -29,6 +29,7 @@ public class FileServiceImpl implements FileService {
                 return false;
             }
         }
+
         @Override
         public String readFromFile(){
             try {
@@ -50,12 +51,8 @@ public class FileServiceImpl implements FileService {
             }
         }
 
-
         @PostConstruct
         private void init(){
             readFromFile();
         }
-
-
-
 }

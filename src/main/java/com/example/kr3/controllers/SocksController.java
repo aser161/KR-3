@@ -51,7 +51,6 @@ public class SocksController {
             }
         }
         return ResponseEntity.ok().body(total);
-
     }
 
         @DeleteMapping("/delete")
@@ -65,5 +64,4 @@ public class SocksController {
         }
         return ResponseEntity.internalServerError().build();
     }
-
 }

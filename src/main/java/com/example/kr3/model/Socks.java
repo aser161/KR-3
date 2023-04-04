@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class Socks {
-
     private Color color;
     private SizeSocks size;
     private int cottonPart;
